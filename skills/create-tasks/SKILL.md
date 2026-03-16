@@ -1,6 +1,9 @@
 ---
 name: create-tasks
-description: "Creates well-formed tasks following a template that engineers can implement. Triggers on: 'create tasks', 'define work items', 'break this down', creating tasks from PRD, converting requirements into actionable tasks, feature breakdown, sprint planning."
+description: >-
+  This skill should be used when the user asks to create tasks, define work items, break this down, or wants to convert requirements into actionable tasks and feature breakdowns for sprint planning. It creates well-formed tasks following a template that engineers can implement.
+metadata:
+  version: "1.0.0"
 ---
 ## Current Project Context
 

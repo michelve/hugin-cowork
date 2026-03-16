@@ -1,9 +1,9 @@
 ---
 name: component-visualizer
 description: >-
-    Generate interactive HTML dependency graphs for React components.
-    Use when asked to "visualize components", "show component dependencies",
-    "dependency graph", "component map", or "what depends on what".
+  This skill should be used when the user asks to visualize components, show component dependencies, dependency graph, component map, or what depends on what. It generates interactive HTML dependency graphs for React components.
+metadata:
+  version: "1.0.0"
 ---
 # Component Visualizer
 

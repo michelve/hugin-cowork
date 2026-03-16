@@ -1,6 +1,9 @@
 ---
 name: route-tester
-description: Framework-agnostic HTTP API route testing patterns, authentication strategies, and integration testing best practices. Supports REST APIs with JWT cookie authentication and other common auth patterns.
+description: >-
+  This skill should be used when the user is testing HTTP API routes, working with authentication strategies, or writing integration tests. It covers framework-agnostic HTTP API route testing patterns, JWT cookie authentication, and other common auth patterns.
+metadata:
+  version: "1.0.0"
 ---
 ## Current Project Context
 
@@ -56,7 +59,7 @@ See [http-method-patterns.md](examples/http-method-patterns.md) for GET, POST, P
 
 ### 4. Response Validation
 
-See [response-validation.md](reference/response-validation.md) for status code testing and response schema validation patterns.
+See [response-validation.md](references/response-validation.md) for status code testing and response schema validation patterns.
 
 ### 5. Error Handling Tests
 

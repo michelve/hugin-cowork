@@ -1,6 +1,9 @@
 ---
 name: adr-writer
-description: "Write, validate, and commit Architecture Decision Records in MADR 4.0.0 format. Use when user says 'write an ADR', 'create an ADR', 'document this decision', 'ADR for X', 'architecture decision record for X', 'record this decision', 'document the decision to use X', or wants to formally capture an architectural choice. Do NOT trigger on 'what ADR covers X?', 'show me the ADR for Y', 'does this violate an ADR?', or 'check ADR compliance' - those are lookup/audit tasks."
+description: >-
+  This skill should be used when the user asks to write an ADR, create an ADR, document this decision, ADR for X, architecture decision record for X, record this decision, or document the decision to use X. It writes, validates, and commits Architecture Decision Records in MADR 4.0.0 format. Do NOT trigger on lookup or audit tasks such as what ADR covers X or check ADR compliance.
+metadata:
+  version: "1.0.0"
 ---
 This skill uses extended thinking for complex architectural trade-off analysis. ultrathink
 

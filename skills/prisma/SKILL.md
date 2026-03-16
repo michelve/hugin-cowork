@@ -1,6 +1,9 @@
 ---
 name: prisma
-description: Prisma ORM patterns including Prisma Client usage, queries, mutations, relations, transactions, and schema management. Use when working with Prisma database operations or schema definitions.
+description: >-
+  This skill should be used when the user is working with Prisma database operations or schema definitions. It covers Prisma ORM patterns including Prisma Client usage, queries, mutations, relations, transactions, and schema management.
+metadata:
+  version: "1.0.0"
 ---
 # Prisma ORM Patterns
 
@@ -92,37 +95,37 @@ const posts = await prisma.post.findMany({
 
 ## Repository Pattern
 
-See [repository-pattern.md](reference/repository-pattern.md) for repository template, when to use repositories, and service integration.
+See [repository-pattern.md](references/repository-pattern.md) for repository template, when to use repositories, and service integration.
 
 ---
 
 ## Transaction Patterns
 
-See [transactions.md](reference/transactions.md) for simple and interactive transaction patterns with timeout configuration.
+See [transactions.md](references/transactions.md) for simple and interactive transaction patterns with timeout configuration.
 
 ---
 
 ## Query Optimization
 
-See [query-optimization.md](reference/query-optimization.md) for select vs include, field limiting, and relation fetching.
+See [query-optimization.md](references/query-optimization.md) for select vs include, field limiting, and relation fetching.
 
 ---
 
 ## N+1 Query Prevention
 
-See [n-plus-one.md](reference/n-plus-one.md) for N+1 problem identification and solutions using include and batch queries.
+See [n-plus-one.md](references/n-plus-one.md) for N+1 problem identification and solutions using include and batch queries.
 
 ---
 
 ## Relations
 
-See [relations.md](reference/relations.md) for one-to-many queries, nested writes, and relation data patterns.
+See [relations.md](references/relations.md) for one-to-many queries, nested writes, and relation data patterns.
 
 ---
 
 ## Error Handling
 
-See [error-handling.md](reference/error-handling.md) for Prisma error codes (P2002, P2003, P2025) and error handling patterns.
+See [error-handling.md](references/error-handling.md) for Prisma error codes (P2002, P2003, P2025) and error handling patterns.
 
 ---
 

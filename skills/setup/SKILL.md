@@ -1,6 +1,9 @@
 ---
 name: setup
-description: "Verify environment variables, MCP servers, and LSP are configured correctly. Use when user says 'setup', 'check my setup', 'verify config', 'is everything configured', or wants to confirm their development environment is ready."
+description: >-
+  This skill should be used when the user says setup, check my setup, verify config, is everything configured, or wants to confirm their development environment is ready. It verifies that environment variables, MCP servers, and related tools are configured correctly.
+metadata:
+  version: "1.0.0"
 ---
 # Setup Verification
 

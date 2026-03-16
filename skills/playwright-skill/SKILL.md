@@ -1,6 +1,10 @@
 ---
 name: playwright-skill
-description: Complete browser automation with Playwright. Auto-detects dev servers, writes clean test scripts to /tmp. Test pages, fill forms, take screenshots, check responsive design, validate UX, test login flows, check links, automate any browser task. Use when user wants to test websites, automate browser interactions, validate web functionality, or perform any browser-based testing.
+description: >-
+  This skill should be used when the user wants to test websites, automate browser interactions, validate web functionality, or perform any browser-based testing. It provides complete browser automation with Playwright including auto-detection of dev servers, writing clean test scripts, testing pages, filling forms, taking screenshots, checking responsive design, and validating UX.
+metadata:
+  version: "1.0.0"
+compatibility: "Requires Playwright MCP server."
 ---
 ## Current Project Context
 
@@ -121,7 +125,7 @@ await browser.close();
 
 ## Available Helpers & Custom HTTP Headers
 
-See [reference/helpers-headers-guide.md](reference/helpers-headers-guide.md) for helper function reference (detectDevServers, safeClick, safeType, takeScreenshot, handleCookieBanner, extractTableData) and custom HTTP header configuration.
+See [reference/helpers-headers-guide.md](references/helpers-headers-guide.md) for helper function reference (detectDevServers, safeClick, safeType, takeScreenshot, handleCookieBanner, extractTableData) and custom HTTP header configuration.
 
 ## Advanced Usage
 

@@ -1,6 +1,10 @@
 ---
 name: miro-mcp
-description: This skill teaches how to use Miro MCP tools effectively for creating diagrams, documents, tables, and extracting context from Miro boards. Use when the user asks about Miro capabilities, wants to create content on Miro boards, or needs to work with Miro board data.
+description: >-
+  This skill should be used when the user asks about Miro capabilities, wants to create content on Miro boards, or needs to work with Miro board data. It teaches how to use Miro MCP tools effectively for creating diagrams, documents, tables, and extracting context from Miro boards.
+metadata:
+  version: "1.0.0"
+compatibility: "Requires Miro MCP server connection."
 ---
 # Using Miro with Claude Code
 

@@ -1,9 +1,23 @@
 {
   "name": "hugin-cowork",
-  "version": "1.0.0",
-  "description": "Cowork-compatible skills for shipping design-to-production React 19 apps — Figma-to-code translation, accessibility enforcement, and development best practices for designers and engineers.",
+  "version": "2.0.0",
+  "description": "Cowork-compatible skills, agents, hooks, and MCP servers for shipping design-to-production React 19 apps — Figma-to-code translation, accessibility enforcement, and development best practices for designers and engineers.",
   "author": {
     "name": "Michel Velis",
     "email": "mvelis90@gmail.com"
-  }
+  },
+  "homepage": "https://github.com/michelve/hugin-cowork",
+  "repository": "https://github.com/michelve/hugin-cowork",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "typescript",
+    "figma",
+    "accessibility",
+    "tailwindcss",
+    "shadcn",
+    "prisma",
+    "code-review",
+    "design-system"
+  ]
 }

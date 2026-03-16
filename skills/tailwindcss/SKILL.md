@@ -1,6 +1,9 @@
 ---
 name: tailwindcss
-description: Tailwind CSS v4 utility-first styling patterns including responsive design, dark mode, and custom configuration. Use when styling with Tailwind, adding utility classes, configuring Tailwind, setting up dark mode, or customizing the theme.
+description: >-
+  This skill should be used when the user is styling with Tailwind, adding utility classes, configuring Tailwind, setting up dark mode, or customizing the theme. It covers Tailwind CSS v4 utility-first styling patterns including responsive design, dark mode, and custom configuration.
+metadata:
+  version: "1.0.0"
 ---
 # Tailwind CSS v4 Development Guidelines
 
@@ -28,7 +31,7 @@ Best practices for using Tailwind CSS v4 utility classes effectively.
 
 ## Basic Utilities
 
-See [basic-utilities.md](reference/basic-utilities.md) for layout (flexbox, grid, positioning), spacing, typography, and color utility patterns.
+See [basic-utilities.md](references/basic-utilities.md) for layout (flexbox, grid, positioning), spacing, typography, and color utility patterns.
 
 ---
 

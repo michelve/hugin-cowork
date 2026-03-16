@@ -1,6 +1,9 @@
 ---
 name: react
-description: Core React 19 patterns including hooks, Suspense, lazy loading, component structure, TypeScript best practices, and performance optimization. Use when working with React components, hooks, lazy loading, Suspense boundaries, or React-specific TypeScript patterns.
+description: >-
+  This skill should be used when the user is working with React components, hooks, lazy loading, Suspense boundaries, or React-specific TypeScript patterns. It covers core React 19 patterns including hooks, Suspense, lazy loading, component structure, TypeScript best practices, and performance optimization.
+metadata:
+  version: "1.0.0"
 ---
 # React Core Patterns
 
@@ -91,7 +94,7 @@ Creating a React component? Follow this:
 
 ## Core Hooks Patterns
 
-See [hooks-patterns.md](reference/hooks-patterns.md) for useState, useCallback, useMemo, and useEffect patterns with TypeScript examples.
+See [hooks-patterns.md](references/hooks-patterns.md) for useState, useCallback, useMemo, and useEffect patterns with TypeScript examples.
 
 ---
 
@@ -139,13 +142,13 @@ import { ErrorBoundary } from 'react-error-boundary';
 
 ## TypeScript Patterns
 
-See [typescript-patterns.md](reference/typescript-patterns.md) for component props, hooks typing, and custom hook return types.
+See [typescript-patterns.md](references/typescript-patterns.md) for component props, hooks typing, and custom hook return types.
 
 ---
 
 ## Performance Optimization
 
-See [performance.md](reference/performance.md) for React.memo usage, custom comparison functions, and avoiding re-renders.
+See [performance.md](references/performance.md) for React.memo usage, custom comparison functions, and avoiding re-renders.
 
 ---
 
@@ -235,7 +238,7 @@ features/posts/
 
 ## Common Mistakes to Avoid
 
-See [common-mistakes.md](reference/common-mistakes.md) for conditional hooks, missing dependencies, and state mutation anti-patterns.
+See [common-mistakes.md](references/common-mistakes.md) for conditional hooks, missing dependencies, and state mutation anti-patterns.
 
 ---
 

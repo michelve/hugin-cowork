@@ -1,6 +1,9 @@
 ---
 name: accessibility
-description: "Use this skill for any accessibility concern: WCAG compliance (any success criterion including SC 1.3.5 autocomplete, SC 2.4.11 focus obscured), ARIA roles/attributes, screen reader behavior, axe-core or WAVE audit failures, color/non-text contrast, keyboard navigation, focus trapping/management, skip links, touch targets, VPAT reports, or accessible form patterns. Also trigger when a user asks whether a UI library (shadcn, Radix) handles keyboard interactions — but only if the question is specifically about accessibility behavior, not general usage. Do NOT trigger for general component usage questions where keyboard behavior is incidental (e.g., \"does shadcn Tooltip show on hover and focus?\" without an accessibility problem to solve)."
+description: >-
+  This skill should be used when the user asks about accessibility concerns, including WCAG compliance (any success criterion including SC 1.3.5 autocomplete, SC 2.4.11 focus obscured), ARIA roles and attributes, screen reader behavior, axe-core or WAVE audit failures, color and non-text contrast, keyboard navigation, focus trapping and management, skip links, touch targets, VPAT reports, or accessible form patterns. Also triggers when the user asks whether a UI library such as shadcn or Radix handles keyboard interactions — but only if the question is specifically about accessibility behavior, not general usage.
+metadata:
+  version: "1.0.0"
 ---
 # Accessibility
 
@@ -411,8 +414,6 @@ These exceed the required AA level. Implement where feasible to provide a superi
 | **Claude Code** | YAML frontmatter in `SKILL.md` | ✅ Full `!`command`` support | n/a |
 | **Cowork** | `skills-rules.json` (see `skills-rules.json` in this skill) | ✅ | `.skill` file via `python -m scripts.package_skill skills/accessibility`; use `present_files` to deliver packaged results |
 | **Claude.ai** | Paste `SKILL.md` body into Project instructions; attach reference files as knowledge | ❌ No shell commands | n/a |
-
-See [skill-creator/reference/platform-specific.md](../skill-creator/reference/platform-specific.md) for the full platform compatibility guide.
 
 ---
 

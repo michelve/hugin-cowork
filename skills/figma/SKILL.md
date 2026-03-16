@@ -1,6 +1,10 @@
 ---
 name: figma
-description: Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.
+description: >-
+  This skill should be used when the user provides Figma URLs or node IDs, asks about design-to-code implementation, or needs to set up or troubleshoot the Figma MCP server. It uses the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma and translate Figma nodes into production code.
+metadata:
+  version: "1.0.0"
+compatibility: "Requires Figma MCP server connection."
 ---
 # Figma MCP
 

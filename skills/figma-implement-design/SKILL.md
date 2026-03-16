@@ -1,6 +1,10 @@
 ---
-name: "figma-implement-design"
-description: "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection."
+name: figma-implement-design
+description: >-
+  This skill should be used when the user provides Figma URLs or node IDs and asks to implement designs or components that must match Figma specs with 1:1 visual fidelity. It translates Figma nodes into production-ready code using the Figma MCP workflow for design context, screenshots, assets, and project-convention translation.
+metadata:
+  version: "1.0.0"
+compatibility: "Requires a working Figma MCP server connection."
 ---
 This skill uses extended thinking for complex design-to-code translation. ultrathink
 
@@ -219,7 +223,7 @@ When in doubt, prefer the project's design system patterns over literal Figma tr
 
 ## Common Issues and Solutions
 
-See [troubleshooting.md](reference/troubleshooting.md) for solutions to common issues including truncated Figma output, design mismatches, asset loading problems, and design token discrepancies.
+See [troubleshooting.md](references/troubleshooting.md) for solutions to common issues including truncated Figma output, design mismatches, asset loading problems, and design token discrepancies.
 
 ## Understanding Design Implementation
 

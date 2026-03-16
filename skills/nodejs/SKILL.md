@@ -1,6 +1,9 @@
 ---
 name: nodejs
-description: Core Node.js backend patterns for TypeScript applications including async/await error handling, middleware concepts, configuration management, testing strategies, and layered architecture principles. Use when building Node.js backend services, APIs, or microservices.
+description: >-
+  This skill should be used when the user is building Node.js backend services, APIs, or microservices. It covers core Node.js backend patterns for TypeScript applications including async/await error handling, middleware concepts, configuration management, testing strategies, and layered architecture principles.
+metadata:
+  version: "1.0.0"
 ---
 ## Current Project Context
 

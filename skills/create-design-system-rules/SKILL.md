@@ -1,6 +1,10 @@
 ---
 name: create-design-system-rules
-description: Generates custom design system rules for the user's codebase. Use when user says "create design system rules", "generate rules for my project", "set up design rules", "customize design system guidelines", or wants to establish project-specific conventions for Figma-to-code workflows. Requires Figma MCP server connection.
+description: >-
+  This skill should be used when the user asks to create design system rules, generate rules for my project, set up design rules, or customize design system guidelines. It generates custom design system rules for the codebase to establish project-specific conventions for Figma-to-code workflows.
+metadata:
+  version: "1.0.0"
+compatibility: "Requires Figma MCP server connection."
 ---
 This skill uses extended thinking for system-wide design pattern analysis. ultrathink
 
@@ -223,7 +227,7 @@ After creating rules:
 
 ## Rule Categories and Examples
 
-See [reference/rule-categories.md](reference/rule-categories.md) for essential, recommended, and optional rule templates with code examples.
+See [reference/rule-categories.md](references/rule-categories.md) for essential, recommended, and optional rule templates with code examples.
 
 ## Examples
 
@@ -231,7 +235,7 @@ See [examples/framework-examples.md](examples/framework-examples.md) for complet
 
 ## Best Practices and Troubleshooting
 
-See [reference/best-practices-and-issues.md](reference/best-practices-and-issues.md) for best practices, common issues, and understanding design system rules.
+See [reference/best-practices-and-issues.md](references/best-practices-and-issues.md) for best practices, common issues, and understanding design system rules.
 
 ## Arguments
 
