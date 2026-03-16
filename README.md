@@ -2,7 +2,7 @@
 
 A Cowork plugin that helps **product designers and engineers ship design-to-production React apps** — translating Figma mockups into accessible, production-ready components with best-practice enforcement for React 19, TypeScript, Tailwind CSS v4, and shadcn/ui.
 
-**22 skills**, **13 agents**, **7 MCP servers**, and **8 lifecycle hooks** covering the full stack: React 19, TypeScript, Express, Prisma, Tailwind CSS v4, shadcn/ui, Figma integration, accessibility, and testing.
+**22 skills**, **13 agents**, **6 MCP servers**, and **8 lifecycle hooks** covering the full stack: React 19, TypeScript, Express, Prisma, Tailwind CSS v4, shadcn/ui, Figma integration, accessibility, and testing.
 
 Ported from [hugin-v0](https://github.com/michelve/hugin-v0) (the Claude Code CLI plugin).
 
@@ -51,19 +51,18 @@ Ported from [hugin-v0](https://github.com/michelve/hugin-v0) (the Claude Code CL
 | **comparator**                 | sonnet | Blind comparison of two outputs for skill evaluation            |
 | **grader**                     | sonnet | Evaluate expectations against execution transcripts             |
 
-## MCP Servers (7)
+## MCP Servers (6)
 
-Configured in `.mcp.json` at the plugin root. Cowork will auto-configure these servers when the plugin is installed.
+Configured in `.mcp.json` at the plugin root. Cowork auto-configures these servers when the plugin is installed. Directory servers (HTTP/SSE) appear in the Connectors UI; stdio servers run locally via `npx`.
 
-| Server                  | Package / URL                        | Used by                                                |
-| ----------------------- | ------------------------------------ | ------------------------------------------------------ |
-| **context7**            | `@upstash/context7-mcp`              | Library documentation lookup                           |
-| **playwright**          | `@playwright/mcp`                    | playwright-skill                                       |
-| **figma**               | `figma-developer-mcp`                | figma, figma-implement-design, code-connect-components |
-| **figma-console**       | `figma-console-mcp`                  | figma, figma-implement-design                          |
-| **sequential-thinking** | `@anthropic/sequential-thinking-mcp` | Complex reasoning tasks                                |
-| **miro-mcp**            | `https://mcp.miro.com/sse`           | miro-mcp skill                                         |
-| **shadcn**              | `shadcn@latest mcp`                  | shadcn skill                                           |
+| Server                  | Type  | Endpoint                             | Used by                                                |
+| ----------------------- | ----- | ------------------------------------ | ------------------------------------------------------ |
+| **figma**               | HTTP  | `https://mcp.figma.com/mcp`          | figma, figma-implement-design, code-connect-components |
+| **miro-mcp**            | SSE   | `https://mcp.miro.com/sse`           | miro-mcp skill                                         |
+| **context7**            | stdio | `@upstash/context7-mcp`              | Library documentation lookup                           |
+| **playwright**          | stdio | `@playwright/mcp`                    | playwright-skill                                       |
+| **sequential-thinking** | stdio | `@anthropic/sequential-thinking-mcp` | Complex reasoning tasks                                |
+| **shadcn**              | stdio | `shadcn@latest mcp`                  | shadcn skill                                           |
 
 ## Hooks (8)
 
@@ -84,12 +83,13 @@ Lifecycle hooks in `hooks/hooks.json` provide setup checks, code quality guardra
 
 ## Environment Variables
 
-Some skills and MCP servers require API keys. Set them in your shell before launching Cowork.
+Some MCP servers authenticate via Cowork's connector UI (OAuth). The following env vars are only needed for stdio servers or manual overrides.
 
-| Variable        | Used by                                          | Get it from                                                                                     |
-| --------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| `FIGMA_API_KEY` | figma, figma-implement-design, figma MCP servers | [Figma → Settings → Personal access tokens](https://www.figma.com/developers/api#access-tokens) |
-| `MIRO_API_KEY`  | miro-mcp skill (optional)                        | Only needed if your Miro board requires auth beyond the web URL                                 |
+| Variable       | Used by               | Notes                                                       |
+| -------------- | --------------------- | ----------------------------------------------------------- |
+| `MIRO_API_KEY` | miro-mcp skill (opt.) | Only needed if your Miro board requires auth beyond the URL |
+
+> **Figma**: Auth is handled automatically through Cowork's connector UI when using the HTTP directory server. No API key env var needed.
 
 ## Differences from hugin-v0 (CLI)
 

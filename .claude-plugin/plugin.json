@@ -1,6 +1,6 @@
 {
   "name": "hugin-cowork",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Cowork-compatible skills, agents, hooks, and MCP servers for shipping design-to-production React 19 apps — Figma-to-code translation, accessibility enforcement, and development best practices for designers and engineers.",
   "author": {
     "name": "Michel Velis",
